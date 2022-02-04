@@ -5,7 +5,7 @@ import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
-import SignUp from './components/pages/SignUp';
+import SignUp from './components/pages/ConnectWallet';
 
 function App() {
   return (

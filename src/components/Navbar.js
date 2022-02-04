@@ -2,8 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import connectWallet from './pages/ConnectWallet';
 
 function Navbar() {
+
+  const [currentAccount, setCurrentAccount] = useState("");
+  const walletAddress = "Connect Wallet"
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -18,6 +22,8 @@ function Navbar() {
     }
   };
 
+  
+
   useEffect(() => {
     showButton();
   }, []);
@@ -29,8 +35,8 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
-            <i class='fab fa-typo3' />
+            OS
+            <i className='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -62,7 +68,7 @@ function Navbar() {
 
             <li>
               <Link
-                to='/sign-up'
+                to='/'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
@@ -70,7 +76,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button onClick={connectWallet} buttonStyle='btn--outline'>{connectWallet.currentAccount}</Button>}
         </div>
       </nav>
     </>
