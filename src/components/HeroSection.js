@@ -11,6 +11,7 @@ function HeroSection() {
       <p>An NFT Collection</p>
       <div className='hero-btns'>
         <Button
+          link=""
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'

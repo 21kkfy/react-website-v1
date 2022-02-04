@@ -22,14 +22,20 @@ function Navbar() {
     }
   };
 
-  
+
 
   useEffect(() => {
     showButton();
   }, []);
 
   window.addEventListener('resize', showButton);
-
+  /*
+  <li className='nav-item'>
+    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+      Home
+    </Link>
+  </li>
+   */
   return (
     <>
       <nav className='navbar'>
@@ -42,11 +48,7 @@ function Navbar() {
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
+
             <li className='nav-item'>
               <Link
                 to='/services'
@@ -58,11 +60,11 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/products'
+                to='/mint'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                Mint
               </Link>
             </li>
 
@@ -76,7 +78,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button onClick={connectWallet} buttonStyle='btn--outline'>{connectWallet.currentAccount}</Button>}
+          {button && <Button onClick={connectWallet} buttonStyle='btn--outline'>Wallet</Button>}
         </div>
       </nav>
     </>
