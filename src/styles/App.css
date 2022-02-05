@@ -2,7 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 .home,
@@ -52,6 +53,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 /*Custom CSS*/
 .center {
   position: absolute;
@@ -60,8 +62,8 @@
   transform: translate(-50%, -50%);
 }
 
-.box{
-  
+.box {
+
   border: 5px solid #60c657;
   padding: 10px;
 }

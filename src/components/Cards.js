@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cards.css';
+import '../styles/Cards.css';
 import CardItem from './CardItem';
 import CardText from './CardText';
 
@@ -11,29 +11,29 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/demo_otter.png'
+              src='images/hero.2d91f325.png'
               text='Rare %1'
               label='Adventure'
             />
             <CardItem
-              src='images/demo_otter.png'
+              src='images/hero.2d91f325.png'
               text='Rare %3'
               label='Luxury'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/demo_otter.png'
+              src='images/hero.2d91f325.png'
               text='Rare %5'
               label='Mystery'
             />
             <CardItem
-              src='images/demo_otter.png'
+              src='images/hero.2d91f325.png'
               text='Rare %13'
               label='Adventure'
             />
             <CardItem
-              src='images/demo_otter.png'
+              src='images/hero.2d91f325.png'
               text='Rare %6'
               label='Adrenaline'
             />
