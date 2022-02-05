@@ -6,7 +6,7 @@
 }
 
 .home,
-.services,
+.about-us,
 .mint,
 .connect-wallet {
   display: flex;
@@ -16,7 +16,7 @@
   font-size: 3rem;
 }
 
-.services {
+.about-us {
   background-image: url('/images/img-2.jpg');
   background-position: center;
   background-size: cover;
@@ -41,4 +41,43 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #0d1116;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/*Custom CSS*/
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box{
+  
+  border: 5px solid #60c657;
+  padding: 10px;
+}
+
+.header-container {
+  padding-top: 30px;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub-text {
+  font-size: 25px;
+  color: white;
 }
