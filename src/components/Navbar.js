@@ -74,11 +74,11 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Wallet
               </Link>
             </li>
           </ul>
-          {button && <Button onClick={connectWallet} buttonStyle='btn--outline'>Wallet</Button>}
+          {button && <Button link={"/mint"} onClick={connectWallet} buttonStyle='btn--outline'>Wallet</Button>}
         </div>
       </nav>
     </>

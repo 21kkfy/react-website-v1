@@ -1,4 +1,4 @@
-:root{
+:root {
   --button-bg: #8522c7;
   --button-active-bg: #681d9b;
   --small-button-bg: #919191;
@@ -18,33 +18,29 @@
 }
 
 * {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 14px;
-  font-weight: bold;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(
-      var(--bg-gradient_1) 0%,
-      var(--bg-gradient_2) 100%
-    )
-    fixed;
+  background: linear-gradient(var(--bg-gradient_1) 0%,
+      var(--bg-gradient_2) 100%) fixed;
 }
 
-.colorGradient {
-  background: linear-gradient(
-      to bottom,
+.colorGradient-mint {
+  background: linear-gradient(to bottom,
       var(--gradient_1) 0%,
       var(--gradient_2) 65%,
-      var(--gradient_3) 100%
-    )
-    fixed;
+      var(--gradient_3) 100%) fixed;
 }
 
-.page {
+.page-mint {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -52,7 +48,7 @@ body {
   flex-direction: column;
 }
 
-.card {
+.card-mint {
   background-color: var(--card);
   display: flex;
   flex-direction: column;
@@ -64,11 +60,11 @@ body {
   position: relative;
 }
 
-.card:hover {
+.card-mint:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card_header {
+.card-mint_header {
   height: 250px;
   width: 300px;
   display: flex;
@@ -80,12 +76,12 @@ body {
   position: relative;
 }
 
-.card_header_image {
+.card-mint_header_image {
   position: absolute;
   width: 120%;
 }
 
-.card_body {
+.card-mint_body {
   padding: 15px;
   margin-top: 30px;
   display: flex;
@@ -94,12 +90,12 @@ body {
   justify-content: center;
 }
 
-.card_body_view_contract {
+.card-mint_body_view_contract {
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.card_footer {
+.card-mint_footer {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   padding: 15px;
@@ -189,6 +185,7 @@ button:disabled {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

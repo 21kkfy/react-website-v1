@@ -1,6 +1,9 @@
+//React
 import React from 'react';
-import '../styles/App.css';
 import { Button } from './Button';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//CSS
+import '../styles/App.css';
 import '../styles/HeroSection.css';
 
 function HeroSection() {
@@ -19,10 +22,10 @@ function HeroSection() {
           What is an NFT?
         </Button>
         <Button
+          link="/mint"
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          onClick={console.log('hey')}
         >
           MINT AN OTTER <i className='far fa-play-circle' />
         </Button>

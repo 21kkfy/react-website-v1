@@ -10,7 +10,6 @@ import Hero from '../../assets/hero.png';
 //Web 3
 import Web3 from "web3";
 import contract from '../../contracts/contract.json';
-import { ethers } from "ethers";
 //import myEpicNft from '../../utils/MyEpicNFT.json';
 
 const initialInfoState = {
@@ -28,16 +27,17 @@ const initialMintState = {
   status: `Mint your ${contract.name}`,
   amount: 1,
   supply: "0",
-  cost: "1",
+  cost: "0",
 };
 
 export default function Mint() {
   //#region JS
+  
   const [info, setInfo] = useState(initialInfoState);
   const [mintInfo, setMintInfo] = useState(initialMintState);
 
   console.log(info);
-
+  
   const init = async (_request, _contractJSON) => {
     if (window.ethereum.isMetaMask) {
       try {
@@ -47,7 +47,7 @@ export default function Mint() {
         const networkId = await window.ethereum.request({
           method: "net_version",
         });
-        if (networkId === _contractJSON.chain_id) {
+        if (networkId == _contractJSON.chain_id) {
           let web3 = new Web3(window.ethereum);
           setInfo((prevState) => ({
             ...prevState,
@@ -80,7 +80,7 @@ export default function Mint() {
       }));
     }
   };
-
+  
   const initListeners = () => {
     if (window.ethereum) {
       window.ethereum.on("accountsChanged", () => {
@@ -201,16 +201,15 @@ export default function Mint() {
       getCost();
     }
   }, [info.connected]);
-
   //#endregion
   return (
-    <div className="page">
-      <div className="card">
-        <div className="card_header colorGradient">
-          <img className="card_header_image ns" alt={"banner"} src={Hero} />
+    <div className="page-mint">
+      <div className="card-mint">
+        <div className="card-mint_header colorGradient-mint">
+          <img className="card-mint_header_image ns" alt={"banner"} src={Hero} />
         </div>
         {mintInfo.supply < contract.total_supply ? (
-          <div className="card_body">
+          <div className="card-mint_body">
             <div
               style={{
                 display: "flex",
@@ -269,7 +268,7 @@ export default function Mint() {
             ) : null}
           </div>
         ) : (
-          <div className="card_body">
+          <div className="card-mint_body">
             <p style={{ color: "var(--statusText)", textAlign: "center" }}>
               {mintInfo.supply}/{contract.total_supply}
             </p>
@@ -279,7 +278,7 @@ export default function Mint() {
             </p>
           </div>
         )}
-        <div className="card_footer colorGradient">
+        <div className="card-mint_footer colorGradient">
           <button
             className="button"
             style={{
