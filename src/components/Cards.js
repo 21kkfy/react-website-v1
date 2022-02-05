@@ -4,6 +4,8 @@ import CardItem from './CardItem';
 import CardText from './CardText';
 
 function Cards() {
+  //TODO: FAQ part needs to be in a box
+  //TODO: Rarity > Team
   return (
     <div className='cards'>
       <h1>Check out the rarest Otters!</h1>
@@ -41,6 +43,7 @@ function Cards() {
         </div>
       </div>
       <div className="cards__container">
+        
         <h1>Frequently Asked Questions</h1>
         <CardText
           title=""
