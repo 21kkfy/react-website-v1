@@ -8,36 +8,36 @@ function Cards() {
   //TODO: Rarity > Team
   return (
     <div className='cards'>
-      <h1>Check out the rarest Otters!</h1>
+      <h1>Our Team</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
               src='images/hero.2d91f325.png'
-              text='Rare %1'
-              label='Adventure'
+              text='Warthu'
+              label='Manager'
             />
             <CardItem
               src='images/hero.2d91f325.png'
-              text='Rare %3'
-              label='Luxury'
+              text='Robbo'
+              label='Developer'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
               src='images/hero.2d91f325.png'
-              text='Rare %5'
-              label='Mystery'
+              text='To Be Announced'
+              label='Designer'
             />
             <CardItem
               src='images/hero.2d91f325.png'
-              text='Rare %13'
-              label='Adventure'
+              text='Reed'
+              label='Community Manager'
             />
             <CardItem
               src='images/hero.2d91f325.png'
-              text='Rare %6'
-              label='Adrenaline'
+              text='RushCutter'
+              label='Bodyguard'
             />
           </ul>
         </div>
