@@ -5,7 +5,7 @@ import '../../styles/App.css';
 import "../../styles/mintButton.css";
 
 //Assets
-import Hero from '../../assets/hero.png';
+import otterPic from '../../assets/resized_otter_demo.gif';
 
 //Web 3
 import Web3 from "web3";
@@ -148,7 +148,7 @@ export default function Mint() {
         info.web3.utils.toHex(Number(mintInfo.cost) * mintInfo.amount)
       ),
       data: info.contract.methods
-        .mint(info.account, mintInfo.amount)
+        .mint(mintInfo.amount)
         .encodeABI(),
     };
     try {
@@ -206,7 +206,7 @@ export default function Mint() {
     <div className="page-mint">
       <div className="card-mint">
         <div className="card-mint_header colorGradient-mint">
-          <img className="card-mint_header_image ns" alt={"banner"} src={Hero} />
+          <img className="card-mint_header_image ns" alt={"banner"} src={otterPic} />
         </div>
         {mintInfo.supply < contract.total_supply ? (
           <div className="card-mint_body">
@@ -306,7 +306,7 @@ export default function Mint() {
           }}
           className="_90"
           target="_blank"
-          href="https://rinkeby.etherscan.io/address/0x3F63AB81422AA1F715415cc161bE0a0b063aA5F0"
+          href="https://mumbai.polygonscan.com/address/0x2011Cb2fBB787752d95E369A63629567a013fD8F"
         >
           View Contract
         </a>

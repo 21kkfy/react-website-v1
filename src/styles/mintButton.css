@@ -77,7 +77,9 @@ body {
 }
 
 .card-mint_header_image {
-  position: absolute;
+  position: static;
+  margin-bottom: 21px;
+  margin-left: 23px;
   width: 120%;
 }
 
