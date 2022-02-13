@@ -1,7 +1,7 @@
 //React
 import React from 'react';
 import { Button } from './Button';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 //CSS
 import '../styles/App.css';
 import '../styles/HeroSection.css';

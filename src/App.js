@@ -16,7 +16,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/about-us' component={AboutUs} />
           <Route path='/mint' component={Mint} />
-          <Route path='/sign-up' component={ConnectWallet} />
+          <Route path='/wallet' component={ConnectWallet} />
         </Switch>
       </Router>
     </>

@@ -5,7 +5,6 @@ import CardText from './CardText';
 
 function Cards() {
   //TODO: FAQ part needs to be in a box
-  //TODO: Rarity > Team
   return (
     <div className='cards'>
       <h1>Our Team</h1>
@@ -22,17 +21,22 @@ function Cards() {
               text='Robbo'
               label='Developer'
             />
+            <CardItem
+              src='images/hero.2d91f325.png'
+              text='Otto'
+              label='Community Manager'
+            />
           </ul>
           <ul className='cards__items'>
             <CardItem
               src='images/hero.2d91f325.png'
-              text='To Be Announced'
+              text='Skipper'
               label='Designer'
             />
             <CardItem
               src='images/hero.2d91f325.png'
               text='Reed'
-              label='Community Manager'
+              label='Event Manager'
             />
             <CardItem
               src='images/hero.2d91f325.png'

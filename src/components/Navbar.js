@@ -6,7 +6,7 @@ import connectWallet from './pages/ConnectWallet';
 
 function Navbar() {
 
-  const [currentAccount, setCurrentAccount] = useState("");
+  //const [currentAccount, setCurrentAccount] = useState("");
   const walletAddress = "Connect Wallet"
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);

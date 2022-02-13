@@ -32,12 +32,12 @@ const initialMintState = {
 
 export default function Mint() {
   //#region JS
-  
+
   const [info, setInfo] = useState(initialInfoState);
   const [mintInfo, setMintInfo] = useState(initialMintState);
 
   console.log(info);
-  
+
   const init = async (_request, _contractJSON) => {
     if (window.ethereum.isMetaMask) {
       try {
@@ -80,7 +80,7 @@ export default function Mint() {
       }));
     }
   };
-  
+
   const initListeners = () => {
     if (window.ethereum) {
       window.ethereum.on("accountsChanged", () => {
@@ -103,7 +103,7 @@ export default function Mint() {
         method: "eth_call",
         params: [params],
       });
-      console.log(info.web3.utils.hexToNumberString(result));
+      //console.log(info.web3.utils.hexToNumberString(result));
       setMintInfo((prevState) => ({
         ...prevState,
         supply: info.web3.utils.hexToNumberString(result),
@@ -127,7 +127,7 @@ export default function Mint() {
         method: "eth_call",
         params: [params],
       });
-      console.log(info.web3.utils.hexToNumberString(result));
+      //console.log(info.web3.utils.hexToNumberString(result));
       setMintInfo((prevState) => ({
         ...prevState,
         cost: info.web3.utils.hexToNumberString(result),
@@ -314,3 +314,4 @@ export default function Mint() {
     </div>
   );
 }
+//href="https://mumbai.polygonscan.com/address/0x2011Cb2fBB787752d95E369A63629567a013fD8F"
