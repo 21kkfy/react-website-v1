@@ -7,6 +7,8 @@ h1 {
   text-align: center;
 }
 h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 h3 {
@@ -27,7 +29,7 @@ h3 {
 }
 
 .cards__items {
-  margin-bottom: 24px;
+  margin-bottom: 4px;
 }
 
 .cards__item {

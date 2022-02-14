@@ -4,7 +4,7 @@ import CardItem from './CardItem';
 import CardText from './CardText';
 
 function Cards() {
-  //TODO: FAQ part needs to be in a box
+  //TODO: Add animation to buttons
   return (
     <div className='cards'>
       <h1>Our Team</h1>
@@ -47,12 +47,9 @@ function Cards() {
         </div>
       </div>
       <div className="cards__container">
-        
+
         <h1>Frequently Asked Questions</h1>
-        <CardText
-          title=""
-          text=""
-        />
+
         <CardText
           title="What is an NFT ?"
           text="NFT stands for 'non-fungible token'.
@@ -60,7 +57,7 @@ function Cards() {
         A NFT is basically data that is accounted for in a digital ledger, and that data represents something specific and unique.
         
         A NFT can, for example, represent a unique piece of art or a game token"
-
+          id="1"
         />
         <CardText
           title="How can I get an NFT ?"
@@ -70,6 +67,7 @@ function Cards() {
         
         Once the public sale is closed, you can get a Otter on the secondary market (on OpenSea)..
         "
+          id="2"
         />
         <CardText
           title="How to purchase one ?"
@@ -80,18 +78,22 @@ function Cards() {
         Approve the transaction on MetaMask and you are all set.
         
         The Otters Society will be available to mint on our official website."
+          id="3"
         />
         <CardText
           title="What is the total supply?"
           text="10,000 unique Otters will be created"
+          id="4"
         />
         <CardText
           title="How much does it cost to mint an NFT?"
           text="The Price of Minting for Public Sales will be announced soon."
+          id="5"
         />
         <CardText
           title="Where can I View my NFT ?"
           text="Once minted, you'll just need to login into your OpenSea account to view your NFTs."
+          id="6"
         />
       </div>
     </div>
