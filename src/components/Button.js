@@ -9,10 +9,12 @@
 //     </Link>
 //   );
 // }
+//Added HashLink as Link in-roder to be able to use "anchor 
+import { HashLink as Link } from 'react-router-hash-link';
 
 import React from 'react';
 import '../styles/Button.css';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 

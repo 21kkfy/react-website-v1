@@ -13,8 +13,9 @@ function HeroSection() {
       <h1>Otter Society</h1>
       <p>An NFT Collection</p>
       <div className='hero-btns'>
+        
         <Button
-          link=""
+          link="/#1"
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
