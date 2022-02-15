@@ -25,6 +25,7 @@ function Footer() {
               to={{ pathname: "https://www.instagram.com/os_nft/" }}
               target='_blank'
               aria-label='Instagram'
+              rel="noopener noreferrer"
             >
               <i className='fab fa-instagram' />
             </Link>
@@ -33,6 +34,7 @@ function Footer() {
               to={{ pathname: "https://www.reddit.com/r/ottersociety_nft/" }}
               target='_blank'
               aria-label='Reddit'
+              rel="noopener noreferrer"
             >
               <i className='fab fa-reddit' />
             </Link>
@@ -41,6 +43,7 @@ function Footer() {
               to='/'
               target='_blank'
               aria-label='Youtube'
+              rel="noopener noreferrer"
             >
               <i className='fab fa-youtube' />
             </Link>
@@ -49,6 +52,7 @@ function Footer() {
               to={{ pathname: "https://twitter.com/os_nft" }}
               target='_blank'
               aria-label='Twitter'
+              rel="noopener noreferrer"
             >
               <i className='fab fa-twitter' />
             </Link>
@@ -57,6 +61,7 @@ function Footer() {
               to={{ pathname: "https://discord.gg/xCxvB2U2JP" }}
               target='_blank'
               aria-label='Discord'
+              rel="noopener noreferrer"
             >
               <i className='fab fa-discord' />
             </Link>

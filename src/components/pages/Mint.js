@@ -307,6 +307,7 @@ export default function Mint() {
           className="_90"
           target="_blank"
           href="https://mumbai.polygonscan.com/address/0x2011Cb2fBB787752d95E369A63629567a013fD8F"
+          rel="noopener noreferrer"
         >
           View Contract
         </a>
