@@ -51,49 +51,44 @@ function Cards() {
         <h1>Frequently Asked Questions</h1>
 
         <CardText
-          title="What is an NFT ?"
-          text="NFT stands for 'non-fungible token'.
-
-        A NFT is basically data that is accounted for in a digital ledger, and that data represents something specific and unique.
-        
-        A NFT can, for example, represent a unique piece of art or a game token"
+          title="What is an NFT?"
+          text="NFT stands for 'Non-Fungible Token'.
+          An NFT is basically data that is accounted for in a digital ledger, and that data represents something specific and unique.
+          An NFT can, for example, represent a unique piece of art or simply a game token."
           id="1"
         />
         <CardText
-          title="How can I get an NFT ?"
-          text="You will be able to mint your NFT to our smart contract through our website on our initial sale.
-
-        At the time of purchase, a randomly selected NFT will be minted on the blockchain and delivered to your wallet and OpenSea account.
-        
-        Once the public sale is closed, you can get a Otter on the secondary market (on OpenSea)..
-        "
+          title="What's a crpyto wallet?"
+          text="A crypto wallet is an interface that lets you interact with your blockchain assets — Crypto assets are essentially data on the blockchain.
+          "
           id="2"
         />
         <CardText
-          title="How to purchase one ?"
-          text="The easiest way is to install a MetaMask extension in your Chrome browser and link your Ethereum wallet to it.
-
-        Ensure you have enough ETH in your wallet to cover the cost of a NFT plus the associated transaction (gas) fees.
-        
-        Approve the transaction on MetaMask and you are all set.
-        
-        The Otters Society will be available to mint on our official website."
+          title="How to mint an NFT?"
+          text="You will be able to mint your Otter Society NFT through our smart contract on our website website's mint page.
+        At the time of purchase, a randomly selected NFT will be minted on the Ethereum blockchain and delivered to your crpyto wallet.
+        "
           id="3"
         />
         <CardText
-          title="What is the total supply?"
-          text="10,000 unique Otters will be created"
+          title="How to purchase an already minted NFT?"
+          text="Once the minting process is over and the limit for NFTs are reached, you can get an Otter Society NFT on the secondary markets such as OpenSea or Rarible."
           id="4"
         />
         <CardText
-          title="How much does it cost to mint an NFT?"
-          text="The Price of Minting for Public Sales will be announced soon."
+          title="What is the total supply for Otter Society Collection?"
+          text="10,000 Otter Society NFTs will be created!"
           id="5"
         />
         <CardText
-          title="Where can I View my NFT ?"
-          text="Once minted, you'll just need to login into your OpenSea account to view your NFTs."
+          title="How much does it cost to mint an Otter Society NFT?"
+          text="Prices will be announced in the upcoming months."
           id="6"
+        />
+        <CardText
+          title="Where can I view my NFT ?"
+          text="Once minted, you'll just need to login into your OpenSea account to view your NFTs."
+          id="7"
         />
       </div>
     </div>

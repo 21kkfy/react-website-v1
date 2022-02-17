@@ -12,11 +12,10 @@ function CardText(props) {
         }
     }
 
-
     return (
         <ul>
             <h2><i onClick={toggleVision} className='fab fa-typo3' />   {props.title}</h2>
-            <p id={props.id} className='cards__item__text gradient-text'>
+            <p id={props.id} className='cards__item__text gradient-text center-text'>
                 {props.text}
             </p>
         </ul>

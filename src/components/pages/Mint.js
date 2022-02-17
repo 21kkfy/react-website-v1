@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import Footer from '../Footer';
 //CSS
 import '../../styles/App.css';
 import "../../styles/mintButton.css";
@@ -10,7 +10,6 @@ import otterPic from '../../assets/resized_otter_demo.gif';
 //Web 3
 import Web3 from "web3";
 import contract from '../../contracts/contract.json';
-//import myEpicNft from '../../utils/MyEpicNFT.json';
 
 const initialInfoState = {
   connected: false,
@@ -203,6 +202,7 @@ export default function Mint() {
   }, [info.connected]);
   //#endregion
   return (
+    <>
     <div className="page-mint">
       <div className="card-mint">
         <div className="card-mint_header colorGradient-mint">
@@ -313,6 +313,8 @@ export default function Mint() {
         </a>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 //href="https://mumbai.polygonscan.com/address/0x2011Cb2fBB787752d95E369A63629567a013fD8F"

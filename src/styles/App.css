@@ -18,8 +18,9 @@
 }
 
 .road-map {
+  background-image: url("/images/roadmap-underc.png");
   background-position: center;
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
@@ -76,6 +77,9 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.center-text{
+  text-align: center;
 }
 
 .sub-text {
