@@ -7,7 +7,7 @@
 }
 
 .home,
-.about-us,
+.road-map,
 .mint,
 .connect-wallet {
   display: flex;
@@ -17,8 +17,7 @@
   font-size: 3rem;
 }
 
-.about-us {
-  background-image: url('/images/img-2.jpg');
+.road-map {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
