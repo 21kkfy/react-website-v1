@@ -15,7 +15,7 @@ function HeroSection() {
       <div className='hero-btns'>
         
         <Button
-          link="/#1"
+          link="/#0"
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
