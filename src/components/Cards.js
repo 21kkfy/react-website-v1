@@ -58,7 +58,7 @@ function Cards() {
             id="1"
           />
           <CardText
-            title="What is a crpyto wallet?"
+            title="What is a crypto wallet?"
             text="A crypto wallet is an interface that lets you interact with your blockchain assets — Crypto assets are essentially data on the blockchain.
           "
             id="2"
@@ -66,7 +66,7 @@ function Cards() {
           <CardText
             title="How to mint an NFT?"
             text="You will be able to mint your Otter Society NFT through our smart contract on our website website's mint page.
-        At the time of purchase, a randomly selected NFT will be minted on the Ethereum blockchain and delivered to your crpyto wallet.
+        At the time of purchase, a randomly selected NFT will be minted on the Ethereum blockchain and delivered to your crypto wallet.
         "
             id="3"
           />
