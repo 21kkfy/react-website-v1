@@ -10,7 +10,7 @@ function Cards() {
       <h1><i className='fa-solid fa-otter' />   Our Team</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
-          <ul className='cards__items reveal'>
+          <ul className='cards__items'>
             <CardItem
               src='images/hero.2d91f325.png'
               text='Warthu'
@@ -77,7 +77,7 @@ function Cards() {
           />
           <CardText
             title="What is the total supply for Otter Society Collection?"
-            text="10,000 Otter Society NFTs will be created!"
+            text="10.000 Otter Society NFTs will be created!"
             id="5"
           />
           <CardText
