@@ -7,7 +7,7 @@ function Cards() {
   //TODO: Add animation to buttons
   return (
     <div className='cards'>
-      <h1>Our Team</h1>
+      <h1><i className='fa-solid fa-otter' />   Our Team</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -48,7 +48,7 @@ function Cards() {
       </div>
       <div className="cards__container">
 
-        <h1 id="0"><i className='fab fa-typo3' />   Frequently Asked Questions</h1>
+        <h1 id="0"><i className='fa-solid fa-otter' />   Frequently Asked Questions</h1>
         <ul>
           <CardText
             title="What is an NFT?"
@@ -58,7 +58,7 @@ function Cards() {
             id="1"
           />
           <CardText
-            title="What's a crpyto wallet?"
+            title="What is a crpyto wallet?"
             text="A crypto wallet is an interface that lets you interact with your blockchain assets — Crypto assets are essentially data on the blockchain.
           "
             id="2"
@@ -86,7 +86,7 @@ function Cards() {
             id="6"
           />
           <CardText
-            title="Where can I view my NFT ?"
+            title="Where can I see my NFT?"
             text="Once minted, you'll just need to login into your OpenSea account to view your NFTs."
             id="7"
           />

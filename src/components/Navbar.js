@@ -36,20 +36,8 @@ function Navbar() {
     </Link>
   </li>
    */
-  return (
-    <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            OS
-            <i className='fab fa-typo3' />
-          </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-
-            <li className='nav-item'>
+  /*
+  <li className='nav-item'>
               <Link
                 to='/road-map'
                 className='nav-links'
@@ -58,6 +46,19 @@ function Navbar() {
                 Road Map
               </Link>
             </li>
+   */
+  return (
+    <>
+      <nav className='navbar'>
+        <div className='navbar-container'>
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            OS
+            <i className='fa-solid fa-otter' />
+          </Link>
+          <div className='menu-icon' onClick={handleClick}>
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          </div>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link
                 to='/mint'
@@ -74,6 +75,7 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
+                <i class="fa-solid fa-wallet"></i>
                 Wallet
               </Link>
             </li>

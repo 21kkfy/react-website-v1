@@ -15,10 +15,10 @@ function Footer() {
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
               OS
-              <i className='fab fa-typo3' />
+              <i className='fa-solid fa-otter' />
             </Link>
           </div>
-          <small className='website-rights'>OS © 2022</small>
+          <small className='website-rights'>Crypto Spectres INC. | OS © 2022</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link instagram'
