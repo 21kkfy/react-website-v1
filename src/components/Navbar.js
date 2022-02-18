@@ -7,7 +7,7 @@ import connectWallet from './pages/ConnectWallet';
 function Navbar() {
 
   //const [currentAccount, setCurrentAccount] = useState("");
-  const walletAddress = "Connect Wallet"
+  //const walletAddress = "Connect Wallet"
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -71,16 +71,15 @@ function Navbar() {
 
             <li>
               <Link
-                to='/'
+                to=''
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                <i className="fa-solid fa-wallet"></i>
                 Wallet
               </Link>
             </li>
           </ul>
-          {button && <Button link={"/mint"} onClick={connectWallet} buttonStyle='btn--outline'>Wallet</Button>}
+          {button && <Button link={""} onClick={connectWallet()} buttonStyle='btn--outline'>Wallet</Button>}
         </div>
       </nav>
     </>
