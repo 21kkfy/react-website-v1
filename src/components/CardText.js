@@ -1,24 +1,26 @@
 import React from 'react';
-var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
-
+//var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+//<i onClick={toggleVision} className='fa fa-plus' />
+//https://callstack.github.io/react-native-paper/icon-button.html
 
 function CardText(props) {
+    /**
+     * @var paraTag is paragraph tag.
+     */
     function toggleVision() {
-        var x = document.getElementById(props.id);
-        if (x.style.display === "none") {
-            x.style.display = "block";
+        var paraTag = document.getElementById(props.id);
+        if (paraTag.style.display === "block") {
+            paraTag.style.display = "none";
         } else {
-            x.style.display = "none";
+            paraTag.style.display = "block";
         }
     }
 
     return (
-        <ul>
-            <h2><i onClick={toggleVision} className='fab fa-typo3' />   {props.title}</h2>
-            <p id={props.id} className='cards__item__text gradient-text center-text'>
-                {props.text}
-            </p>
-        </ul>
+        <li>
+            <h2><i onClick={toggleVision} className='fa fa-plus' />   {props.title}</h2>
+            <p id={props.id} className='box cards__item__text gradient-text closed-first text-left'>{props.text}</p>
+        </li>
     );
 }
 

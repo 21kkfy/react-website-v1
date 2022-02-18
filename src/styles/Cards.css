@@ -9,11 +9,28 @@ h1 {
 h2 {
   margin-top: 10px;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
 }
+
 h3 {
   text-align: center;
 }
+
+ul{
+  display: block;
+  list-style-position: outside;
+  padding-left: 0pt;
+  text-align: left;
+  list-style-type: none;
+}
+li{
+  align-items: left;
+  text-align: left;
+}
+.text-left{
+  text-align: left;
+}
+
 .cards__container {
   display: flex;
   flex-flow: column;
@@ -105,6 +122,26 @@ h3 {
   font-size: 18px;
   line-height: 24px;
 }
+
+.closed-first{
+  text-align: left;
+  display: none;
+}
+i{
+  padding-left: 0pt;
+}
+i.fa{
+  cursor: pointer;
+  user-select: none;
+  align-self: left;
+  align-items: left;
+  align-content: left;
+}
+
+.fa:hover {
+  color: green;
+}
+
 
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
