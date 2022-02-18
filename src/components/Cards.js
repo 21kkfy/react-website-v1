@@ -48,7 +48,7 @@ function Cards() {
       </div>
       <div className="cards__container">
 
-        <h1>Frequently Asked Questions</h1>
+        <h1><i className='fab fa-typo3' />   Frequently Asked Questions</h1>
         <ul>
           <CardText
             title="What is an NFT?"
