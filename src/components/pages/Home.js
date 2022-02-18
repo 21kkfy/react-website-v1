@@ -20,6 +20,7 @@ function Home() {
         reveals[i].classList.remove("active");
       }
     }
+    //https://alvarotrigo.com/blog/css-animations-scroll/
   }
   window.addEventListener("scroll", reveal);
   
