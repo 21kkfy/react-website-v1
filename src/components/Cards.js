@@ -46,7 +46,7 @@ function Cards() {
           </ul>
         </div>
       </div>
-      <div className="cards__container reveal">
+      <div className="cards__container">
 
         <h1 id="0"><i className='fa-solid fa-otter' />   Frequently Asked Questions</h1>
         <ul>
