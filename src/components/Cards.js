@@ -4,13 +4,13 @@ import CardItem from './CardItem';
 import CardText from './CardText';
 
 function Cards() {
-  //TODO: Add animation to buttons
+  
   return (
     <div className='cards'>
       <h1><i className='fa-solid fa-otter' />   Our Team</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
-          <ul className='cards__items'>
+          <ul className='cards__items reveal'>
             <CardItem
               src='images/hero.2d91f325.png'
               text='Warthu'
@@ -27,7 +27,7 @@ function Cards() {
               label='Community Manager'
             />
           </ul>
-          <ul className='cards__items'>
+          <ul className='cards__items reveal'>
             <CardItem
               src='images/hero.2d91f325.png'
               text='Skipper'
@@ -46,7 +46,7 @@ function Cards() {
           </ul>
         </div>
       </div>
-      <div className="cards__container">
+      <div className="cards__container reveal">
 
         <h1 id="0"><i className='fa-solid fa-otter' />   Frequently Asked Questions</h1>
         <ul>

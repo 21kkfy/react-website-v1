@@ -75,7 +75,7 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                <i class="fa-solid fa-wallet"></i>
+                <i className="fa-solid fa-wallet"></i>
                 Wallet
               </Link>
             </li>
