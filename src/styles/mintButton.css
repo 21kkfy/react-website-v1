@@ -111,6 +111,8 @@ body {
 }
 
 .statusText {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   color: var(--statusText);
   font-weight: normal;
   text-align: center;
@@ -135,6 +137,7 @@ body {
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(-90deg);
+  /*No underline on View Contract text cuz it's used with gradient-text*/
 }
 
 .button {

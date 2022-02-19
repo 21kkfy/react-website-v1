@@ -7,7 +7,7 @@ async function ConnectWallet() {
     const { ethereum } = window;
 
     if (!ethereum) {
-      alert("Get MetaMask!");
+      alert("No crypto wallet has been detected.");
       return;
     }
     const accounts = await ethereum.request({ method: "eth_requestAccounts" });

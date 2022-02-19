@@ -71,7 +71,6 @@ function Navbar() {
 
             <li>
               <Link
-                to=''
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
@@ -79,7 +78,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button link={""} onClick={connectWallet()} buttonStyle='btn--outline'>Wallet</Button>}
+          {button && <Button onClick={connectWallet()} buttonStyle='btn--outline'>Wallet</Button>}
         </div>
       </nav>
     </>
