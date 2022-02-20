@@ -26,14 +26,6 @@
   font-size: 100px;
 }
 
-.products {
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
 .connect-wallet {
   background-position: center;
   background-size: cover;
@@ -61,7 +53,7 @@
 }
 
 .box {
-  border: 5px solid #60c657;
+  border: 5px solid black;
   padding: 10px;
 }
 
