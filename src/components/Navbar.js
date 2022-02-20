@@ -5,7 +5,6 @@ import '../styles/Navbar.css';
 import connectWallet from './pages/ConnectWallet';
 
 function Navbar() {
-
   //const [currentAccount, setCurrentAccount] = useState("");
   //const walletAddress = "Connect Wallet"
   const [click, setClick] = useState(false);
@@ -46,6 +45,24 @@ function Navbar() {
                 Road Map
               </Link>
             </li>
+    <li className='nav-item'>
+              <Link
+                to='/#mint'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Mint
+              </Link>
+            </li>
+    <li>
+              <Link
+                className='nav-links-mobile'
+                onClick={closeMobileMenu}
+              >
+                Wallet
+              </Link>
+            </li>
+          {button && <Button onClick={connectWallet()} buttonStyle='btn--outline'>Wallet</Button>}
    */
   return (
     <>
@@ -59,26 +76,8 @@ function Navbar() {
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link
-                to='/mint'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Mint
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Wallet
-              </Link>
-            </li>
+            
           </ul>
-          {button && <Button onClick={connectWallet()} buttonStyle='btn--outline'>Wallet</Button>}
         </div>
       </nav>
     </>

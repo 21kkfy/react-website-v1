@@ -1,9 +1,13 @@
 import React from 'react';
+//CSS
 import '../../styles/App.css';
+import "../../styles/mintButton.css";
+//Components
 import Cards from '../Cards';
 import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 import RoadMap from '../pages/RoadMap';
+import Mint from '../pages/Mint';
 
 function Home() {
 
@@ -28,6 +32,7 @@ function Home() {
     <>
       <HeroSection />
       <RoadMap />
+      <Mint />
       <Cards />
       <Footer />
     </>

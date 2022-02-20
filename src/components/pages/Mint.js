@@ -1,8 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Footer from '../Footer';
-//CSS
-import '../../styles/App.css';
-import "../../styles/mintButton.css";
 
 //Assets
 import otterPic from '../../assets/resized_otter_demo.gif';
@@ -203,8 +199,8 @@ export default function Mint() {
   //#endregion
   return (
     <>
-    <div className="page-mint">
-      <div className="card-mint">
+    <div id="mint" className="page-mint reveal">
+      <div className="card-mint reveal">
         <div className="card-mint_header colorGradient-mint">
           <img className="card-mint_header_image ns" alt={"banner"} src={otterPic} />
         </div>
@@ -313,7 +309,6 @@ export default function Mint() {
         </a>
       </div>
     </div>
-    <Footer />
     </>
   );
 }
