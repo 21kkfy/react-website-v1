@@ -22,7 +22,7 @@ function HeroSection() {
           What is an NFT?
         </Button>
         <Button
-          link="/mint"
+          link="/#mint"
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
