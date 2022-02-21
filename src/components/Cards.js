@@ -4,7 +4,6 @@ import CardItem from './CardItem';
 import CardText from './CardText';
 
 function Cards() {
-  
   return (
     <div className='cards'>
       <h1><i className='fa-solid fa-otter' />   Our Team</h1>
@@ -47,7 +46,7 @@ function Cards() {
         </div>
       </div>
       <div className="cards__container">
-
+        
         <h1 id="0"><i className='fa-solid fa-otter' />   Frequently Asked Questions</h1>
         <ul>
           <CardText
