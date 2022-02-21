@@ -1,7 +1,7 @@
 import React from 'react';
 //CSS
 import '../../styles/App.css';
-import "../../styles/mintButton.css";
+import "../../styles/mintCard.css";
 //Components
 import Cards from '../Cards';
 import HeroSection from '../HeroSection';
