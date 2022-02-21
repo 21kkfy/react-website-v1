@@ -1,6 +1,5 @@
 import React from 'react';
 //var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
-//<i onClick={toggleVision} className='fa fa-plus' />
 //https://callstack.github.io/react-native-paper/icon-button.html
 
 function CardText(props) {
