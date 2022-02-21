@@ -63,6 +63,10 @@ function Navbar() {
               </Link>
             </li>
           {button && <Button onClick={connectWallet()} buttonStyle='btn--outline'>Wallet</Button>}
+          
+          <div className='menu-icon' onClick={handleClick}>
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          </div>
    */
   return (
     <>
@@ -72,9 +76,6 @@ function Navbar() {
             <h1>OS</h1>
             <i className='fa-solid fa-otter' />
           </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             
           </ul>

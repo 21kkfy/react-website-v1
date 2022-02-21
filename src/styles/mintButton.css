@@ -77,8 +77,10 @@ body {
 }
 
 .card-mint_header_image {
+  max-width: 100%;
+  height: auto;
   position: static;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   margin-left: 23px;
   width: 120%;
 }
