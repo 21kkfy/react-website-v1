@@ -119,6 +119,7 @@ body {
 }
 
 .accountText {
+  user-select: none;
   color: var(--accountText);
   font-weight: bold;
 }

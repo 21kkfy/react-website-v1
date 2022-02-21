@@ -69,7 +69,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            OS
+            <h1>OS</h1>
             <i className='fa-solid fa-otter' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
