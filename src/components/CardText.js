@@ -17,7 +17,7 @@ function CardText(props) {
 
     return (
         <li className=' reveal'>
-            <h2 onClick={toggleVision} ><i onClick={toggleVision} className='fa fa-plus' />   {props.title}</h2>
+            <h2 onClick={toggleVision} ><i className='fa fa-plus' />   {props.title}</h2>
             <p id={props.id} className='box cards__item__text closed-first text-left reveal box-text'>{props.text}</p>
         </li>
     );
