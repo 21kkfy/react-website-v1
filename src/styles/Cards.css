@@ -70,7 +70,7 @@ p {
 
 .cards__item__link {
   /*top right bottom left*/
-  margin: 0px 10px 2px 0px;
+  margin: 0px 10px 10px 50px;
   color: white;
   background-color: #5E747F;
   display: flex;
@@ -89,6 +89,7 @@ p {
   width: 100%;
   padding-top: 67%;
   overflow: hidden;
+  border-radius: 12px;
 }
 
 .fade-img {
@@ -100,14 +101,16 @@ p {
   content: attr(data-category);
   position: absolute;
   bottom: 0;
-  margin-left: 10px;
+  margin-left: 0.5px;
   padding: 6px 8px;
-  max-width: calc((100%) - 60px);
+  /*Controls width of texts*/
+  max-width: calc((100%) - 40px);
   font-size: 12px;
   font-weight: 700;
   color: #fff;
   background-color: #1f98f4;
   box-sizing: border-box;
+  border-radius: 12px;
 }
 
 .cards__item__img {

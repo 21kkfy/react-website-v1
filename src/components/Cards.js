@@ -23,7 +23,8 @@ function Cards() {
             <CardItem
               src='images/hero.2d91f325.png'
               text='Otto'
-              label='Community Manager'
+              label='Community
+              Manager'
             />
           </ul>
           <ul className='cards__items reveal'>
@@ -39,8 +40,8 @@ function Cards() {
             />
             <CardItem
               src='images/hero.2d91f325.png'
-              text='RushCutter'
-              label='Bodyguard'
+              text='RushC.'
+              label='Social Media Expert'
             />
           </ul>
         </div>
