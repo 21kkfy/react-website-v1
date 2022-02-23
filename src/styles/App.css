@@ -54,6 +54,7 @@
 }
 
 .box {
+  max-width: fit-content;
   border-radius: 25px;
   border: 5px solid black;
   padding: 10px;

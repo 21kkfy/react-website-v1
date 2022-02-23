@@ -70,7 +70,7 @@ p {
 
 .cards__item__link {
   /*top right bottom left*/
-  margin: 0px 10px 10px 50px;
+  margin: 0px 15px 20px 15px;
   color: white;
   background-color: #5E747F;
   display: flex;
