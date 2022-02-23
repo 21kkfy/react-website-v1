@@ -1,8 +1,10 @@
+#Ignore uploading build & node_modules
 node_modules
 build
+#Ignore uploading gif files.
 public/images/otter_demo.gif
 src/assets/lookhere.png
 src/assets/otter_demo.gif
-build.rar
-ottersociety.io.rar
 ottersociety.io/
+#Ignore all .rar files
+*.rar
