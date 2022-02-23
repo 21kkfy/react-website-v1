@@ -80,9 +80,10 @@ body {
   max-width: 100%;
   height: auto;
   position: static;
-  margin-bottom: 20px;
-  margin-left: 23px;
+  margin-bottom: 18px;
+  margin-left: auto;
   width: 120%;
+  border-radius: 19px;
 }
 
 .card-mint_body {
