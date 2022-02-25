@@ -25,14 +25,6 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  background: linear-gradient(var(--bg-gradient_1) 0%,
-      var(--bg-gradient_2) 100%) fixed;
-}
-
 .colorGradient-mint {
   background: linear-gradient(to bottom,
       var(--gradient_1) 0%,

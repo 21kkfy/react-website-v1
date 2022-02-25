@@ -1,5 +1,11 @@
 /*Smooth scroll on HashLink click events*/
-html {
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(var(--bg-gradient_1) 0%,
+      var(--bg-gradient_2) 100%) fixed;
+
   scroll-behavior: smooth;
 }
 
@@ -64,6 +70,7 @@ html {
   border: 5px solid black;
   padding: 10px;
 }
+
 .box-text {
   color: rgb(0, 0, 0);
 }
@@ -78,7 +85,8 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.center-text{
+
+.center-text {
   text-align: center;
 }
 
@@ -87,13 +95,14 @@ html {
   color: white;
 }
 
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 2s all ease;
 }
-.reveal.active{
+
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
