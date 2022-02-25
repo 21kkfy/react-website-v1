@@ -1,3 +1,8 @@
+/*Smooth scroll on HashLink click events*/
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   user-select: none;
   box-sizing: border-box;

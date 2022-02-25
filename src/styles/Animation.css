@@ -1,8 +1,0 @@
-.p-anim {
-    opacity: 0.04;
-}
-
-.p-anim-active {
-    opacity: 2;
-    transition: opacity 50s ease-in;
-}
