@@ -101,7 +101,7 @@ p {
   content: attr(data-category);
   position: absolute;
   bottom: 0;
-  margin-left: 0.5px;
+  margin-left: 0.05px;
   padding: 6px 8px;
   /*Controls width of texts*/
   max-width: calc((100%) - 40px);
