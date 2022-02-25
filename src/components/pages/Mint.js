@@ -202,7 +202,7 @@ export default function Mint() {
     <div id="mint" className="page-mint reveal">
       <div className="card-mint reveal">
         <div className="card-mint_header colorGradient-mint">
-          <img className="card-mint_header_image ns" alt={"banner"} src={otterPic} />
+          <img className="card-mint_header_image selector ns" alt={"banner"} src={otterPic} />
         </div>
         {mintInfo.supply < contract.total_supply ? (
           <div className="card-mint_body">
