@@ -6,7 +6,7 @@ import CardText from './CardText';
 function Cards() {
   return (
     <div className='cards'>
-      <h1><i className='fa-solid fa-otter' />   Our Team</h1>
+      <h1><i className='fa-solid fa-otter' />   Team</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
