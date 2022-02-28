@@ -36,24 +36,7 @@ function Navbar() {
   </li>
    */
   /*
-  <li className='nav-item'>
-              <Link
-                to='/road-map'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Road Map
-              </Link>
-            </li>
-    <li className='nav-item'>
-              <Link
-                to='/#mint'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Mint
-              </Link>
-            </li>
+    
     <li>
               <Link
                 className='nav-links-mobile'
@@ -77,7 +60,33 @@ function Navbar() {
             <i className='fa-solid fa-otter' />
           </Link>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            
+            <li className='nav-item'>
+              <Link
+                to='#mint'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Mint
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='#faq'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                FAQ
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='#team'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Team
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
