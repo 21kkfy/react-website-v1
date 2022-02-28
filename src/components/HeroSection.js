@@ -8,12 +8,8 @@ import '../styles/HeroSection.css';
 
 function HeroSection() {
   //<video src='../../public/videos/video-1.mp4' autoPlay loop muted />
-  return (
-    <div className='hero-container'>
-      <h1>Otter Society</h1>
-      <p>An NFT Collection</p>
-      <div className='hero-btns'>
-        <Button
+  /*
+    <Button
           link="/#0"
           className='btns'
           buttonStyle='btn--outline'
@@ -29,6 +25,13 @@ function HeroSection() {
         >
           MINT AN OTTER <i className='far fa-play-circle' />
         </Button>
+  */
+  return (
+    <div className='hero-container'>
+      <h1>Otter Society</h1>
+      <p>Otter Society is an NFT Collection. Developed by Crypto Spectres © 2022</p>
+      <div className='hero-btns'>
+
       </div>
     </div>
   );
