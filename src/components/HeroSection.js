@@ -1,30 +1,37 @@
+//React
 import React from 'react';
-import '../App.css';
 import { Button } from './Button';
-import './HeroSection.css';
+//import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//CSS
+import '../styles/App.css';
+import '../styles/HeroSection.css';
 
 function HeroSection() {
-  return (
-    <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
-      <div className='hero-btns'>
-        <Button
+  //<video src='../../public/videos/video-1.mp4' autoPlay loop muted />
+  /*
+    <Button
+          link="/#0"
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          GET STARTED
+          What is an NFT?
         </Button>
         <Button
+          link="/#mint"
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          onClick={console.log('hey')}
         >
-          WATCH TRAILER <i className='far fa-play-circle' />
+          MINT AN OTTER <i className='far fa-play-circle' />
         </Button>
+  */
+  return (
+    <div className='hero-container'>
+      <h1>Otter Society</h1>
+      <p>Otter Society is an NFT Collection. Developed by Crypto Spectres © 2022</p>
+      <div className='hero-btns'>
+
       </div>
     </div>
   );
