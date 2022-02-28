@@ -5,8 +5,8 @@ import CardText from './CardText';
 
 function Cards() {
   return (
-    <div className='cards'>
-      <h1><i className='fa-solid fa-otter' />   Team</h1>
+    <div id="team" className='cards'>
+      <h1 ><i className='fa-solid fa-otter' />   Team</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -46,9 +46,9 @@ function Cards() {
           </ul>
         </div>
       </div>
-      <div className="cards__container">
-        
-        <h1 id="0"><i className='fa-solid fa-otter' />   Frequently Asked Questions</h1>
+      <div id="faq" className="cards__container">
+
+        <h1><i className='fa-solid fa-otter' />   Frequently Asked Questions</h1>
         <ul>
           <CardText
             title="What is an NFT?"
