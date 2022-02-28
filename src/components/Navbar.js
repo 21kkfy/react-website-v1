@@ -81,21 +81,21 @@ function Navbar() {
             <li className='nav-item'>
               <Link
                 smooth
-                to='#faq'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                FAQ
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                smooth
                 to='#team'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Team
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                smooth
+                to='#faq'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                FAQ
               </Link>
             </li>
           </ul>
