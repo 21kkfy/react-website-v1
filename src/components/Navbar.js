@@ -47,9 +47,7 @@ function Navbar() {
             </li>
           {button && <Button onClick={connectWallet()} buttonStyle='btn--outline'>Wallet</Button>}
           
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
+          
    */
   return (
     <>
