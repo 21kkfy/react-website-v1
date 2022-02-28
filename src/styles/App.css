@@ -5,9 +5,8 @@ body {
   margin: 0;
   background: linear-gradient(var(--bg-gradient_1) 0%,
       var(--bg-gradient_2) 100%) fixed;
-
-  scroll-behavior: smooth;
 }
+
 .selector {
   user-drag: none;
   -webkit-user-drag: none;
@@ -16,6 +15,7 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
 * {
   user-select: none;
   box-sizing: border-box;

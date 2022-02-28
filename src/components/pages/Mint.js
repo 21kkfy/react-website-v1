@@ -198,7 +198,6 @@ export default function Mint() {
   }, [info.connected]);
   //#endregion
   return (
-    <>
     <div id="mint" className="page-mint reveal">
       <div className="card-mint reveal">
         <div className="card-mint_header colorGradient-mint">
@@ -309,7 +308,6 @@ export default function Mint() {
         </a>
       </div>
     </div>
-    </>
   );
 }
 //href="https://mumbai.polygonscan.com/address/0x2011Cb2fBB787752d95E369A63629567a013fD8F"
