@@ -302,7 +302,7 @@ export default function Mint() {
             }}
             className="_90 gradient-text"
             target="_blank"
-            href="https://mumbai.polygonscan.com/address/0xb4F8a46C62AC65d1DFB5a2b5E4002f3A9094c155"
+            href="https://rinkeby.etherscan.io/address/0x0225DD002f13671B24F9780Bf83e5Ec8231eD158"
             rel="noopener noreferrer"
           >
             View Contract
@@ -312,5 +312,7 @@ export default function Mint() {
     </section>
   );
 }
+//Rinkeby contract
+//https://rinkeby.etherscan.io/address/0x0225DD002f13671B24F9780Bf83e5Ec8231eD158
 //Old demo contract
 //href="https://mumbai.polygonscan.com/address/0x2011Cb2fBB787752d95E369A63629567a013fD8F"

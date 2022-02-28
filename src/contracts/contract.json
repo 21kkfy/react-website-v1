@@ -1,11 +1,11 @@
 {
-  "name": "Demo NFT",
-  "symbol": "feb28",
+  "name": "Demo NFT Rinkeby",
+  "symbol": "dNFTRIN",
   "total_supply": 100,
-  "chain_symbol": "MATIC",
-  "chain": "Mumbai",
-  "chain_id": 80001,
-  "address": "0xb4F8a46C62AC65d1DFB5a2b5E4002f3A9094c155",
+  "chain_symbol": "RIN",
+  "chain": "Rinkeby",
+  "chain_id": 4,
+  "address": "0x0225DD002f13671B24F9780Bf83e5Ec8231eD158",
   "abi": [
     {
       "inputs": [
