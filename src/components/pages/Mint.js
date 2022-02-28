@@ -198,116 +198,118 @@ export default function Mint() {
   }, [info.connected]);
   //#endregion
   return (
-    <div id="mint" className="page-mint reveal">
-      <div className="card-mint reveal">
-        <div className="card-mint_header colorGradient-mint">
-          <img className="card-mint_header_image selector ns" alt={"banner"} src={otterPic} />
-        </div>
-        {mintInfo.supply < contract.total_supply ? (
-          <div className="card-mint_body">
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <button
-                disabled={!info.connected || mintInfo.cost === "0"}
-                className="small_button"
-                onClick={() => updateAmount(mintInfo.amount - 1)}
+    <section id="mint">
+      <div className="page-mint reveal">
+        <div className="card-mint reveal">
+          <div className="card-mint_header colorGradient-mint">
+            <img className="card-mint_header_image selector ns" alt={"banner"} src={otterPic} />
+          </div>
+          {mintInfo.supply < contract.total_supply ? (
+            <div className="card-mint_body">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
               >
-                -
-              </button>
-              <div style={{ width: 10 }}></div>
-              <button
-                disabled={!info.connected || mintInfo.cost === "0"}
-                className="button"
-                onClick={() => mint()}
-              >
-                Mint {mintInfo.amount}
-              </button>
-              <div style={{ width: 10 }}></div>
-              <button
-                disabled={!info.connected || mintInfo.cost === "0"}
-                className="small_button"
-                onClick={() => updateAmount(mintInfo.amount + 1)}
-              >
-                +
-              </button>
-            </div>
-            {info.connected ? (
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <p style={{ color: "var(--statusText)", textAlign: "center" }}>
-                  {info.web3?.utils.fromWei(mintInfo.cost, "ether") *
-                    mintInfo.amount}{" "}
-                  {contract.chain_symbol}
-                </p>
-                <div style={{ width: 20 }}></div>
-                <p style={{ color: "var(--statusText)", textAlign: "center" }}>
-                  |
-                </p>
-                <div style={{ width: 20 }}></div>
-                <p style={{ color: "var(--statusText)", textAlign: "center" }}>
-                  {mintInfo.supply}/{contract.total_supply}
-                </p>
+                <button
+                  disabled={!info.connected || mintInfo.cost === "0"}
+                  className="small_button"
+                  onClick={() => updateAmount(mintInfo.amount - 1)}
+                >
+                  -
+                </button>
+                <div style={{ width: 10 }}></div>
+                <button
+                  disabled={!info.connected || mintInfo.cost === "0"}
+                  className="button"
+                  onClick={() => mint()}
+                >
+                  Mint {mintInfo.amount}
+                </button>
+                <div style={{ width: 10 }}></div>
+                <button
+                  disabled={!info.connected || mintInfo.cost === "0"}
+                  className="small_button"
+                  onClick={() => updateAmount(mintInfo.amount + 1)}
+                >
+                  +
+                </button>
               </div>
-            ) : null}
-            {mintInfo.status ? (
-              <p className="statusText">{mintInfo.status}</p>
-            ) : null}
-            {info.status ? (
-              <p className="statusText" style={{ color: "var(--error)" }}>
-                {info.status}
+              {info.connected ? (
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <p style={{ color: "var(--statusText)", textAlign: "center" }}>
+                    {info.web3?.utils.fromWei(mintInfo.cost, "ether") *
+                      mintInfo.amount}{" "}
+                    {contract.chain_symbol}
+                  </p>
+                  <div style={{ width: 20 }}></div>
+                  <p style={{ color: "var(--statusText)", textAlign: "center" }}>
+                    |
+                  </p>
+                  <div style={{ width: 20 }}></div>
+                  <p style={{ color: "var(--statusText)", textAlign: "center" }}>
+                    {mintInfo.supply}/{contract.total_supply}
+                  </p>
+                </div>
+              ) : null}
+              {mintInfo.status ? (
+                <p className="statusText">{mintInfo.status}</p>
+              ) : null}
+              {info.status ? (
+                <p className="statusText" style={{ color: "var(--error)" }}>
+                  {info.status}
+                </p>
+              ) : null}
+            </div>
+          ) : (
+            <div className="card-mint_body">
+              <p style={{ color: "var(--statusText)", textAlign: "center" }}>
+                {mintInfo.supply}/{contract.total_supply}
               </p>
+              <p className="statusText">
+                We've sold out! .You can still buy and trade the {contract.name}{" "}
+                on marketplaces such as Opensea.
+              </p>
+            </div>
+          )}
+          <div className="card-mint_footer colorGradient">
+            <button
+              className="button"
+              style={{
+                backgroundColor: info.connected
+                  ? "var(--success)"
+                  : "var(--warning)",
+              }}
+              onClick={() => connectToContract(contract)}
+            >
+              {info.account ? "Connected" : "Connect Wallet"}
+            </button>
+            {info.connected ? (
+              <span className="accountText">
+                {String(info.account).substring(0, 6) +
+                  "..." +
+                  String(info.account).substring(38)}
+              </span>
             ) : null}
           </div>
-        ) : (
-          <div className="card-mint_body">
-            <p style={{ color: "var(--statusText)", textAlign: "center" }}>
-              {mintInfo.supply}/{contract.total_supply}
-            </p>
-            <p className="statusText">
-              We've sold out! .You can still buy and trade the {contract.name}{" "}
-              on marketplaces such as Opensea.
-            </p>
-          </div>
-        )}
-        <div className="card-mint_footer colorGradient">
-          <button
-            className="button"
+          <a
             style={{
-              backgroundColor: info.connected
-                ? "var(--success)"
-                : "var(--warning)",
+              position: "absolute",
+              bottom: 55,
+              left: -75,
             }}
-            onClick={() => connectToContract(contract)}
+            className="_90 gradient-text"
+            target="_blank"
+            href="https://mumbai.polygonscan.com/address/0x2011Cb2fBB787752d95E369A63629567a013fD8F"
+            rel="noopener noreferrer"
           >
-            {info.account ? "Connected" : "Connect Wallet"}
-          </button>
-          {info.connected ? (
-            <span className="accountText">
-              {String(info.account).substring(0, 6) +
-                "..." +
-                String(info.account).substring(38)}
-            </span>
-          ) : null}
+            View Contract
+          </a>
         </div>
-        <a
-          style={{
-            position: "absolute",
-            bottom: 55,
-            left: -75,
-          }}
-          className="_90 gradient-text"
-          target="_blank"
-          href="https://mumbai.polygonscan.com/address/0x2011Cb2fBB787752d95E369A63629567a013fD8F"
-          rel="noopener noreferrer"
-        >
-          View Contract
-        </a>
       </div>
-    </div>
+    </section>
   );
 }
 //href="https://mumbai.polygonscan.com/address/0x2011Cb2fBB787752d95E369A63629567a013fD8F"
