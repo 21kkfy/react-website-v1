@@ -193,7 +193,9 @@ export default function Mint() {
   useEffect(() => {
     if (info.connected) {
       getSupply();
+      //console.log("getSupply worked correctly");
       getCost();
+      //console.log("getCost worked correctly");
     }
   }, [info.connected]);
   //#endregion
@@ -302,7 +304,7 @@ export default function Mint() {
             }}
             className="_90 gradient-text"
             target="_blank"
-            href="https://mumbai.polygonscan.com/address/0xb4F8a46C62AC65d1DFB5a2b5E4002f3A9094c155"
+            href="https://kovan.etherscan.io/tx/0xa0558b4d3262898af7c42862bc6e9bd3728698cf5c9cc1d8b3e3ff17c9c79985"
             rel="noopener noreferrer"
           >
             View Contract
@@ -312,5 +314,6 @@ export default function Mint() {
     </section>
   );
 }
+//Kovan new https://kovan.etherscan.io/tx/0xa0558b4d3262898af7c42862bc6e9bd3728698cf5c9cc1d8b3e3ff17c9c79985
 //Old demo contract
 //href="https://mumbai.polygonscan.com/address/0x2011Cb2fBB787752d95E369A63629567a013fD8F"
