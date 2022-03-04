@@ -201,6 +201,7 @@ export default function Mint() {
   //#endregion
   return (
     <section id="mint">
+      <h1 className='reveal gradient-text h1-page' ><i className='fa-solid fa-otter' />   Mint</h1>
       <div className="page-mint reveal">
         <div className="card-mint reveal">
           <div className="card-mint_header colorGradient-mint">
@@ -311,6 +312,8 @@ export default function Mint() {
           </a>
         </div>
       </div>
+
+      <div className="flat-horizontal-line gradient-text"></div>
     </section>
   );
 }

@@ -9,6 +9,9 @@ import '../styles/HeroSection.css';
 function HeroSection() {
   //<video src='../../public/videos/video-1.mp4' autoPlay loop muted />
   /*
+  <div className='hero-btns'>
+
+      </div>
     <Button
           link="/#0"
           className='btns'
@@ -30,9 +33,7 @@ function HeroSection() {
     <div className='hero-container'>
       <h1>Otter Society</h1>
       <p>Otter Society is an NFT Collection. Developed by Crypto Spectres © 2022</p>
-      <div className='hero-btns'>
-
-      </div>
+      <div className="flat-horizontal-line gradient-text"></div>
     </div>
   );
 }
