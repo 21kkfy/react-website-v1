@@ -2,9 +2,13 @@
 html,
 body {
   padding: 0;
-  margin: 0;
   background: linear-gradient(var(--bg-gradient_1) 0%,
       var(--bg-gradient_2) 100%) fixed;
+}
+
+.h1-page {
+  padding-top: 4%;
+  font-size: 40px;
 }
 
 .selector {
@@ -43,6 +47,15 @@ body {
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+}
+
+.road-map-bg {
+  /*background-image: url("../assets/roadmap-under-construction.png");*/
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
 }
 
 .connect-wallet {
@@ -112,4 +125,9 @@ body {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.flat-horizontal-line {
+  border: 0.5px solid black;
+  border-radius: 15px;
 }
