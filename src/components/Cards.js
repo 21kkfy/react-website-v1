@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Cards.css';
+import '../styles/App.css';
 import CardItem from './CardItem';
 import CardText from './CardText';
 
@@ -7,7 +8,7 @@ function Cards() {
   return (
     <section id="team">
       <div className='cards'>
-        <h1 ><i className='fa-solid fa-otter' />   Team</h1>
+        <h1 className='reveal gradient-text h1-page' ><i className='fa-solid fa-otter' />   Team</h1>
         <div className='cards__container'>
           <div className='cards__wrapper'>
             <ul className='cards__items'>
@@ -47,9 +48,10 @@ function Cards() {
             </ul>
           </div>
         </div>
-        <div id="faq" className="cards__container">
 
-          <h1><i className='fa-solid fa-otter' />   Frequently Asked Questions</h1>
+        <div className="flat-horizontal-line gradient-text"></div>
+        <div id="faq" className="cards__container">
+          <h1 className='reveal gradient-text h1-page' ><i className='fa-solid fa-otter' />   FAQ</h1>
           <ul>
             <CardText
               title="What is an NFT?"
