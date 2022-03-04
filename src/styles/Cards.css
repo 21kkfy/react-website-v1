@@ -1,6 +1,5 @@
 .cards {
   padding: 4rem;
-  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
   /*Colored background for <Cards> component*/
 }
 
@@ -87,7 +86,7 @@ p {
 .cards__item__pic-wrap {
   position: relative;
   width: 100%;
-  padding-top: 67%;
+  padding-top: 100%;
   overflow: hidden;
   border-radius: 12px;
 }
