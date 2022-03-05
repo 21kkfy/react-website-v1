@@ -88,7 +88,8 @@ p {
   width: 100%;
   padding-top: 100%;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 15px;
+  margin-bottom: 5px;
 }
 
 .fade-img {
@@ -129,11 +130,11 @@ p {
 }
 
 .cards__item__img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .cards__item__info {
-  padding: 20px 30px 30px;
+  padding: 20px 40px 30px;
 }
 
 .cards__item__text {
@@ -147,21 +148,23 @@ p {
   display: none;
 }
 
-i {
-  padding-left: 0pt;
+i.cards__item__icon {
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 i.fa {
   cursor: pointer;
   user-select: none;
-  align-self: left;
-  align-items: left;
-  align-content: left;
+  align-self: center;
+  align-items: center;
+  align-content: center;
 }
 
+/*
 .fa:hover {
   color: green;
-}
+}*/
 
 
 @media only screen and (min-width: 1200px) {
