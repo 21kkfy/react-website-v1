@@ -10,7 +10,7 @@ function Cards() {
       <div className='cards'>
         <h1 className='reveal gradient-text h1-page' ><i className='fa-solid fa-otter' />   Team</h1>
         <div className='cards__container'>
-          <div className='cards__wrapper'>
+          <div className='cards__wrapper reveal'>
             <ul className='cards__items'>
               <CardItem
                 src='images/hero.2d91f325.png'
@@ -32,7 +32,7 @@ function Cards() {
                 twitter="otterotto6"
               />
             </ul>
-            <ul className='cards__items reveal'>
+            <ul className='cards__items'>
               <CardItem
                 src='images/hero.2d91f325.png'
                 text='Skipper'
@@ -58,7 +58,7 @@ function Cards() {
         <div className="flat-horizontal-line gradient-text"></div>
         <div id="faq" className="cards__container">
           <h1 className='reveal gradient-text h1-page' ><i className='fa-solid fa-otter' />   FAQ</h1>
-          <ul>
+          <ul className='reveal'>
             <CardText
               title="What is an NFT?"
               text="NFT stands for 'Non-Fungible Token'.

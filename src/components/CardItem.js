@@ -5,7 +5,7 @@ function CardItem(props) {
   var twitterName = props.twitter;
   return (
     <>
-      <li className='cards__item__link reveal'>
+      <li className='cards__item__link'>
         <figure className='cards__item__pic-wrap' data-category={props.label}>
           <img
             className='cards__item__img'
