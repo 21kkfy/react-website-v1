@@ -305,7 +305,7 @@ export default function Mint() {
             }}
             className="_90 gradient-text"
             target="_blank"
-            href="https://kovan.etherscan.io/tx/0xa0558b4d3262898af7c42862bc6e9bd3728698cf5c9cc1d8b3e3ff17c9c79985"
+            href="https://testnet.snowtrace.io/address/0x02666F88BC8782E177b17acE004093018cE38938"
             rel="noopener noreferrer"
           >
             View Contract
@@ -317,6 +317,7 @@ export default function Mint() {
     </section>
   );
 }
+//FUJI https://testnet.snowtrace.io/address/0x02666F88BC8782E177b17acE004093018cE38938
 //Kovan new https://kovan.etherscan.io/tx/0xa0558b4d3262898af7c42862bc6e9bd3728698cf5c9cc1d8b3e3ff17c9c79985
 //Old demo contract
 //href="https://mumbai.polygonscan.com/address/0x2011Cb2fBB787752d95E369A63629567a013fD8F"
