@@ -20,24 +20,15 @@ function Cards() {
               />
               <CardItem
                 src='images/hero.2d91f325.png'
-                text='Robbo'
-                label='Developer'
-                twitter="OtterRobbo"
-              />
-              <CardItem
-                src='images/hero.2d91f325.png'
-                text='Otto'
-                label='Community
-              Manager'
-                twitter="otterotto6"
-              />
-            </ul>
-            <ul className='cards__items'>
-              <CardItem
-                src='images/hero.2d91f325.png'
                 text='Skipper'
                 label='Designer'
                 twitter="os_skipper"
+              />
+              <CardItem
+                src='images/hero.2d91f325.png'
+                text='Robbo'
+                label='Developer'
+                twitter="OtterRobbo"
               />
               <CardItem
                 src='images/hero.2d91f325.png'

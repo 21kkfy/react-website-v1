@@ -134,10 +134,11 @@ p {
 }
 
 .cards__item__info {
-  padding: 20px 40px 30px;
+  padding: 40px;
 }
 
 .cards__item__text {
+  text-align: center;
   user-select: none;
   font-size: 18px;
   line-height: 24px;
@@ -149,8 +150,9 @@ p {
 }
 
 i.cards__item__icon {
-  padding-left: 20%;
-  padding-right: 20%;
+  text-align: left;
+  padding-inline-start: 25%;
+  padding-inline-end: 25%;
 }
 
 i.fa {
