@@ -97,13 +97,13 @@ p {
   animation-duration: 2s;
 }
 
-.cards__item__pic-wrap::after {
+/* .cards__item__pic-wrap::after {
   content: attr(data-category);
   position: absolute;
   bottom: 0;
   margin-left: 0.05px;
   padding: 6px 8px;
-  /*Controls width of texts*/
+  /*Controls width of texts
   max-width: calc((100%) - 40px);
   font-size: 12px;
   font-weight: 700;
@@ -111,7 +111,7 @@ p {
   background-color: #1f98f4;
   box-sizing: border-box;
   border-radius: 12px;
-}
+} */
 
 .cards__item__img {
   user-select: all;
@@ -142,6 +142,14 @@ p {
   user-select: none;
   font-size: 18px;
   line-height: 24px;
+}
+
+.cards__item__about {
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  user-select: none;
 }
 
 .closed-first {

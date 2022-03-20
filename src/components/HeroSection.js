@@ -32,7 +32,7 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <h1>Otter Society</h1>
-      <p>Otter Society is an NFT Collection. Developed by Crypto Spectres © 2022</p>
+      <p className='center-text'>Otter Society is an NFT Collection. Developed by Crypto Spectres © 2022</p>
       <div className="flat-horizontal-line gradient-text"></div>
     </div>
   );

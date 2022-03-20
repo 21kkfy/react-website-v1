@@ -14,7 +14,18 @@ function CardItem(props) {
           />
         </figure>
         <div className='cards__item__info'>
-          <h5 className='cards__item__text'>{props.text}</h5>
+          <h5 className='cards__item__text'>{props.name}</h5>
+          <ul style={{ listStyleType: "disc" }}>
+            <li>
+              <p className='cards__item__about'>{props.about1}</p>
+            </li>
+            <li>
+              <p className='cards__item__about'>{props.about2}</p>
+            </li>
+            <li>
+              <p className='cards__item__about'>{props.about3}</p>
+            </li>
+          </ul>
           <Link
             className='social-icon-link twitter'
             to={{ pathname: "https://twitter.com/" + twitterName }}
@@ -24,8 +35,8 @@ function CardItem(props) {
           >
             <i className='fa-brands fa-twitter cards__item__icon' />
           </Link>
-        </div>
-      </li>
+        </div >
+      </li >
     </>
   );
 }

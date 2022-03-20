@@ -13,33 +13,43 @@ function Cards() {
           <div className='cards__wrapper reveal'>
             <ul className='cards__items'>
               <CardItem
-                src='images/hero.2d91f325.png'
-                text='Warthu'
-                label='Manager'
+                src='images/warthu.png'
+                name='Warthu'
+                about1="Founder & Manager"
+                about2="Has a Pink Floyd record"
+                about3="Crypto investor since 2015"
                 twitter="OtterWarthu_"
               />
               <CardItem
-                src='images/hero.2d91f325.png'
-                text='Skipper'
-                label='Designer'
+                src='images/skipper.png'
+                name='Skipper'
+                about1="Cartoon and Animation Student"
+                about2="Cartoon Designer"
+                about3="Animation Artist logo and Cover Designer"
                 twitter="os_skipper"
               />
               <CardItem
-                src='images/hero.2d91f325.png'
-                text='Robbo'
-                label='Developer'
+                src='images/robbo.jpg'
+                name='Robbo'
+                about1="Software Engineering student"
+                about2="WEB 3.0 DEV"
+                about3="Hardware and Math enthusiast"
                 twitter="OtterRobbo"
               />
               <CardItem
-                src='images/hero.2d91f325.png'
-                text='Reed'
-                label='Event Manager'
+                src='images/reed.png'
+                name='Reed'
+                about1="Event Manager since 2015"
+                about2=""
+                about3=""
                 twitter="os_reed"
               />
               <CardItem
-                src='images/hero.2d91f325.png'
-                text='RushC.'
-                label='Social Media Expert'
+                src='images/rushc.png'
+                name='RushC.'
+                about1="Social Media Expert"
+                about2=""
+                about3=""
                 twitter="otterushcutter"
               />
             </ul>
