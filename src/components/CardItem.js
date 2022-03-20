@@ -5,7 +5,7 @@ function CardItem(props) {
   var twitterName = props.twitter;
   return (
     <>
-      <li className='cards__item__link'>
+      <li className='cards__item__link flat-horizontal-line'>
         <figure className='cards__item__pic-wrap' data-category={props.label}>
           <img
             className='cards__item__img'
@@ -14,7 +14,7 @@ function CardItem(props) {
           />
         </figure>
         <div className='cards__item__info'>
-          <h5 className='cards__item__text'>{props.name}</h5>
+          <h5 className='cards__item__text flat-horizontal-line'>{props.name}</h5>
           <ul style={{ listStyleType: "disc" }}>
             <li>
               <p className='cards__item__about'>{props.about1}</p>
