@@ -1,12 +1,11 @@
+
 import React, { useEffect, useState } from "react";
 
 //Assets
 import otterPic from '../../assets/resized_otter_demo.gif';
-
 //Web 3
 import Web3 from "web3";
 import contract from '../../contracts/contract.json';
-
 const initialInfoState = {
   connected: false,
   status: null,
@@ -200,7 +199,7 @@ export default function Mint() {
   }, [info.connected]);
   //#endregion
   return (
-    <section id="mint">
+    <section id="mint" className="mint-bg">
       <h1 className='reveal gradient-text h1-page' ><i className='fa-solid fa-otter' />   Mint</h1>
       <div className="page-mint reveal">
         <div className="card-mint reveal">
@@ -313,7 +312,7 @@ export default function Mint() {
         </div>
       </div>
 
-      <div className="flat-horizontal-line gradient-text"></div>
+      {/* <div className="flat-horizontal-line gradient-text"></div> */}
     </section>
   );
 }
