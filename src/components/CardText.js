@@ -16,8 +16,8 @@ function CardText(props) {
     }
 
     return (
-        <li>
-            <h2 onClick={toggleVision} ><i className='fa fa-plus' />   {props.title}</h2>
+        <li className='faq-items'>
+            <h2 style={{ color: "White" }} onClick={toggleVision} ><i style={{ color: "Black" }} className='fa fa-plus' />   {props.title}</h2>
             <p id={props.id} className='box cards__item__text closed-first text-left reveal box-text'>{props.text}</p>
         </li>
     );

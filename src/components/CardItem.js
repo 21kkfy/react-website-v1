@@ -14,7 +14,18 @@ function CardItem(props) {
           />
         </figure>
         <div className='cards__item__info'>
-          <h5 className='cards__item__text flat-horizontal-line'>{props.name}</h5>
+          <h5 className='cards__item__text flat-horizontal-line'>
+            <Link
+              style={{ color: "Black" }}
+              className='cards__item__about__link'
+              to={{ pathname: "https://twitter.com/" + twitterName }}
+              target='_blank'
+              aria-label='Twitter'
+              rel="noopener noreferrer"
+            >
+              {props.name}
+            </Link>
+          </h5>
           <ul style={{ listStyleType: "disc" }}>
             <li>
               <p className='cards__item__about'>{props.about1}</p>
@@ -26,15 +37,7 @@ function CardItem(props) {
               <p className='cards__item__about'>{props.about3}</p>
             </li>
           </ul>
-          <Link
-            className='social-icon-link twitter'
-            to={{ pathname: "https://twitter.com/" + twitterName }}
-            target='_blank'
-            aria-label='Twitter'
-            rel="noopener noreferrer"
-          >
-            <i className='fa-brands fa-twitter cards__item__icon' />
-          </Link>
+
         </div >
       </li >
     </>
