@@ -2,8 +2,14 @@
 html,
 body {
   padding: 0;
-  background: linear-gradient(var(--bg-gradient_1) 0%,
-      var(--bg-gradient_2) 100%) fixed;
+  /* background: linear-gradient(var(--bg-gradient_1) 0%,
+      var(--bg-gradient_2) 100%) fixed; */
+}
+
+#hero-section {
+  margin-inline-start: 15%;
+
+  margin-inline-end: 15%;
 }
 
 .h1-page {
@@ -41,7 +47,7 @@ body {
 }
 
 .road-map {
-  background-image: url("/images/roadmap-underc.png");
+  /* background-image: url("/images/roadmap-underc.png"); */
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
@@ -49,13 +55,37 @@ body {
   font-size: 100px;
 }
 
+/* Backgrounds */
 .road-map-bg {
-  /*background-image: url("../assets/roadmap-under-construction.png");*/
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
-  text-align: center;
-  justify-content: center;
+  background: url("../assets/background/4.png") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.mint-bg {
+  background: url("../assets/background/3.png") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.team-bg {
+  background: url("../assets/background/8.png") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.faq-bg {
+  background: url("../assets/background/9.png") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .connect-wallet {
