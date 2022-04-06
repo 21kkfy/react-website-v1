@@ -31,7 +31,7 @@ function Home() {
     <>
       <HeroSection />
       <RoadMap />
-      <Mint />
+      {/* <Mint /> */}
       <Cards />
       <Footer />
     </>

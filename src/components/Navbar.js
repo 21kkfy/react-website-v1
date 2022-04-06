@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
 //Added HashLink as Link in-roder to be able to use "anchor 
 import { HashLink as Link } from 'react-router-hash-link';
 import '../styles/Navbar.css';
@@ -52,11 +51,14 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
-        <div className='navbar-container'>
+        <div className='navbar-logo'>
           <Link smooth to='#' className='navbar-logo' onClick={closeMobileMenu}>
             <h1>OS</h1>
             <i className='fa-solid fa-otter' />
           </Link>
+        </div>
+        <div className='navbar-container'>
+
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link
@@ -68,7 +70,7 @@ function Navbar() {
                 Road Map
               </Link>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
               <Link
                 smooth
                 to='#mint'
@@ -77,7 +79,7 @@ function Navbar() {
               >
                 Mint
               </Link>
-            </li>
+            </li> */}
             <li className='nav-item'>
               <Link
                 smooth

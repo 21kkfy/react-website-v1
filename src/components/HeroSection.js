@@ -7,7 +7,7 @@ import '../styles/App.css';
 import '../styles/HeroSection.css';
 
 function HeroSection() {
-  //<video src='../../public/videos/video-1.mp4' autoPlay loop muted />
+  //
   /*
   <div className='hero-btns'>
 
@@ -31,9 +31,10 @@ function HeroSection() {
   */
   return (
     <div className='hero-container'>
+      <video id='hero-background-video' src='videos/ottersocietyweb.webm' type="video/mp4" autoPlay loop muted />
       <h1>Otter Society</h1>
-      <p className='center-text'>Otter Society is an NFT Collection. Developed by Crypto Spectres © 2022</p>
-      <div className="flat-horizontal-line gradient-text"></div>
+      <p id='hero-section' className='center-text'>Otter Society is an NFT Collection. Developed by Crypto Spectres © 2022</p>
+      {/* <div className="flat-horizontal-line gradient-text"></div> */}
     </div>
   );
 }
