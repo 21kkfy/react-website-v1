@@ -304,7 +304,7 @@ export default function Mint() {
             }}
             className="_90 gradient-text"
             target="_blank"
-            href="https://testnet.snowtrace.io/address/0x02666F88BC8782E177b17acE004093018cE38938"
+            href="https://testnet.snowtrace.io/address/0xEFf24E460983C9C581B184F6b8947FBdfA31544C"
             rel="noopener noreferrer"
           >
             View Contract
